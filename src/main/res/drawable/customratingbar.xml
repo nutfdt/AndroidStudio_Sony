@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idVide"
+        android:scaleType="fitXY"
+        android:drawable="@drawable/btvideb" />
+    <item
+        android:id="@+id/idDemi"
+        android:scaleType="fitXY"
+        android:drawable="@drawable/btdemib" />
+    <item
+        android:id="@+id/idRempli"
+        android:scaleType="fitXY"
+        android:drawable="@drawable/btremplib" />
+</layer-list>

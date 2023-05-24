@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:foregroundGravity="center"
+    android:textAlignment="center"
+    app:flow_horizontalAlign="center"
+    app:flow_verticalAlign="center"
+    tools:context=".Fin"
+    tools:layout_editor_absoluteX="-16dp"
+    tools:layout_editor_absoluteY="-54dp">
+
+
+    <ImageView
+        android:id="@+id/idLogo"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/idFooter"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@android:color/holo_red_dark"
+        android:fontFamily="sans-serif"
+        android:text="Sony Music Sondage RSE 2023"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idBtFin"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttonsuivant"
+        android:backgroundTint="@color/red"
+        android:text="Accueil"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idBtResult"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/buttonsuivant"
+        android:backgroundTint="@color/red"
+        android:text="Voir tous les résultats"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idBtFin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idBtRefaire"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/buttonsuivant"
+        android:backgroundTint="@color/red"
+        android:text="Refaire"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idBtResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/idResultats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/idResultats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="110dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/idBtRefaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
